@@ -1,0 +1,155 @@
+/*CSS Resets*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ */
+/* v1.0 | 20080212 */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*Colors*/
+
+:root{
+    --white:#FFFFFF;
+    --black:#000000;
+    --brown:#F1DEB8;
+}
+/*Container*/
+
+.container{
+    max-width: 1500px;
+    margin:0 auto;
+    padding:32px 0;
+}
+
+/*Generalized*/
+body{
+    font-family: 'Roboto Flex', sans-serif;
+    background-color: var(--brown);
+}
+
+/*Header*/
+
+.header{
+    background-color: var(--black);
+    color: var(--white);
+    padding: 16px;
+}
+
+.heading{
+    font-weight: 400;
+    font-size: 32px;
+    text-align: center;
+}
+
+/*Search*/
+
+.search-box{
+    text-align: center;
+    margin-top: 16px;
+}
+
+input{
+    padding:16px 32px;
+    border:1px solid var(--black);  
+    border-radius: 4px;
+}
+
+input::placeholder{
+    font-size: 16px;
+}
+
+/*User Details*/
+
+.user-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profilePic{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-top: 32px;
+}
+
+.username{
+    margin-top: 32px;
+    font-size:32px;
+    font-weight: 500;
+}
+
+.userId{
+    margin: 20px 0;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.title{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+
+.follower,.following{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+.follower img,.following img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-left: 10px;
+    border: 1px solid var(--black);
+}
